@@ -16,7 +16,7 @@ class WaterIntakeAgent:
     def __init__(self):
         self.history = []
         
-    def analyz_intake(self,intake_ml):
+    def analyze_intake(self,intake_ml):
         
         prompt = f"""
         You are a hydration assistant. The user has consumed {intake_ml} ml of water today.
@@ -30,5 +30,5 @@ class WaterIntakeAgent:
 if __name__ == "__main__":
     agent = WaterIntakeAgent()
     intake = 1500
-    feedback = agent.analyz_intake(intake)  
+    feedback = agent.analyze_intake(intake)  
     print(f"Hydration Analysis: {feedback}")
